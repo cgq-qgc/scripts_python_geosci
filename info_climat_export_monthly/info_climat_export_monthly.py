@@ -19,8 +19,7 @@ project_dirname = osp.dirname(__file__)
 # %% Load study area shapefile
 
 print("Loading shapefile of study area... ", end='')
-shpfilename = osp.join(
-    project_dirname, "data_extraction_limit", "data_extraction_limit.shp")
+shpfilename = osp.join(project_dirname, "data_extraction_limit")
 zone_gdf = gpd.read_file(shpfilename)
 print('done')
 
